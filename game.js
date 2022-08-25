@@ -5,10 +5,21 @@ function putValue() {
 }
 
 const boxes = document.getElementsByTagName("td");
-
+var player1Turn = true;
 for(var index = 0; index < boxes.length; index++) {
     boxes[index].addEventListener("click", (e)=> {
         // console.log("X");
-        e.currentTarget.innerHTML = "X";
+    const player1 = "X";
+    const player2 = "O";
+    var count = "0";
+
+
+         if(player1Turn == true) {
+            e.currentTarget.innerHTML = player1;
+            player1Turn = false;
+        } else {
+            e.currentTarget.innerHTML = player2;
+            player1Turn = true; 
+        }
     });
 }
