@@ -17,20 +17,23 @@
       <br>The first player gets three of the same symbol in a row in any direction-
        <br> <em>Horizontally, vertically, diagonally</em>— wins the game! </p>
     <table>
+      <!-- Top Row -->
       <tr id="top-row">
-        <td class="top-left"></td>
-        <td class="top-middle"></td>
-        <td class="top-right"></td>
+        <td class="top-left left diagonal-left"></td>
+        <td class="middle"></td>
+        <td class="top-right right diagonal-right"></td>
       </tr>
+      <!-- Middle Row -->
       <tr id="middle-row">
-        <td class="middle-left"></td>
-        <td class="center"></td>
-        <td class="middle-right"></td>
+        <td class="middle-left left"></td>
+        <td class="middle diagonal-left diagonal-right"></td>
+        <td class="middle-right right"></td>
       </tr>
+      <!-- Bottom Row -->
       <tr id="bottom-row">
-        <td class="bottom-left"></td>
-        <td class="bottom-middle"></td>
-        <td class="bottom-right"></td>
+        <td class="bottom-left left diagonal-right"></td>
+        <td class="middle"></td>
+        <td class="bottom-right right diagonal-left"></td>
       </tr>
       </table>
 
